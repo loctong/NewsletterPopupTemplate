@@ -1,0 +1,2 @@
+# NewsletterPopupTemplate
+Newsletter Popup Template
