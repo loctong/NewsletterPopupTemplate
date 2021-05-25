@@ -185,7 +185,7 @@ header .logo {
 .dashboard__content__report__generated {
   width: calc(100% / 2 - 1rem);
   height: 41.1rem;
-  border: 2px solid #E0E6ED;
+  border: 2px solid #e0e6ed;
   border-radius: 1rem;
   padding: 2rem;
 }
@@ -195,7 +195,7 @@ header .logo {
   justify-content: space-between;
   width: calc(100% / 2 - 1rem);
   height: 41.1rem;
-  border: 2px solid #E0E6ED;
+  border: 2px solid #e0e6ed;
   border-radius: 1rem;
 }
 
@@ -212,7 +212,7 @@ header .logo {
 
 .dashboard__content__report__referring .subscribe__info .title2 {
   font-size: 2rem;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 .dashboard__content__report__referring .subscribe__info .email__info {
@@ -227,7 +227,7 @@ header .logo {
 }
 
 .email__info button {
-  background-color: #4A35C9;
+  background-color: #4a35c9;
   border: 0;
   border-radius: 1rem;
   color: #fff;
@@ -247,7 +247,7 @@ header .logo {
 
 .dashboard__content_report_table {
   margin-top: 1.5rem;
-  border: 2px solid #E0E6ED;
+  border: 2px solid #e0e6ed;
   border-radius: 1rem;
   height: calc(100vh - 54rem);
   padding: 2rem;
@@ -261,9 +261,7 @@ header .logo {
 .dashboard__content_report_table .table {
   width: 100%;
   border-collapse: collapse;
-  /* display: block; */
   max-height: 35.5rem;
-  /* overflow-y: auto; */
 }
 
 .dashboard__content_report_table .table th {
@@ -271,19 +269,27 @@ header .logo {
   font-weight: 900;
 }
 
-.dashboard__content_report_table .table td, .table th {
-  padding: 12px 15px;
-  white-space: nowrap;
+.dashboard__content_report_table .table td,
+.table th {
+  padding: 1.5rem 1.5rem;
+  white-space: nowrap; /* Cho nay de text ko xuong hang, sinh scroll ngang */
   text-align: left;
 }
 
-.dashboard__content_report_table .table thead, .table tr:not(:last-child) {
-  border-bottom: 1px solid #E0E6ED;
+.dashboard__content_report_table .table thead,
+.table tr:not(:last-child) {
+  border-bottom: 1px solid #e0e6ed;
 }
 
-
-.dashboard__content_report_table .table th {
+.dashboard__content_report_table .table .edit__button {
+  color: #595959;
+  text-decoration: none;
+  border: 1px solid #595959;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
-.dashboard__content_report_table .table tbody tr:nth-child(even) {
+.dashboard__content_report_table .table .edit__button:hover {
+  background-color: #595959;
+  color: #FFF;
 }
