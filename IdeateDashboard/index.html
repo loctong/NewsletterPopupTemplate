@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="assets/Logo.svg" alt="logo" />
+      </a>
+      <div class="search__bar">
+        <div class="search__icon">
+          <img src="assets/Search.svg" alt="" />
+        </div>
+        <input
+          type="text"
+          class="search__report"
+          placeholder="Search reports"
+        />
+      </div>
+      <div class="menu">
+        <a href="#"><img src="assets/Notification.svg" alt="Notification" /></a>
+        <a href="#"><img src="assets/User.svg" alt="User" /></a>
+        <a href="#"><img src="assets/User Avatar.svg" alt="User Avatar" /></a>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <div class="dashboard__sidebar">
+        <div class="dashboard__sidebar__menu__items">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="assets/Overview.svg" alt="Overview" />
+                <span>Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/Report.svg" alt="Report" />
+                <span>Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/Settings.svg" alt="Settings" />
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <span class="line"></span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/Help.svg" alt="Help" />
+                <span>Help</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="dashboard__sidebar__menu__reports">
+          <div class="title">Reports generated</div>
+          <div class="content">
+            This is the number of reports you have used this month
+          </div>
+          <div class="process__bar">
+            <div class="percent">66%</div>
+            <div class="clear__both"></div>
+            <div class="bar">
+              <div class="bar_percent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__content">dashboard_content in here</div>
+    </div>
+
+    <footer></footer>
+  </body>
+
+  <script>
+    const searchBtn = document.querySelector(".search__report");
+    const searchIcon = document.querySelector(".search__icon");
+    searchBtn.addEventListener("focus", (event) => {
+      searchIcon.classList.add("search__icon__focus");
+    });
+
+    searchBtn.addEventListener("focusout", (event) => {
+      searchIcon.classList.remove("search__icon__focus");
+    });
+  </script>
+</html>
