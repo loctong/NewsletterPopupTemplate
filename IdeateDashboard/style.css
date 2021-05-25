@@ -295,7 +295,12 @@ header .logo {
 
 .dashboard__content_report_table .table th {
   color: #000000;
-  font-weight: 900;
+  font-weight: bolder;
+}
+
+.dashboard__content_report_table .table td:first-child {
+  font-weight: 800;
+  color: #595959;
 }
 
 .dashboard__content_report_table .table td,
