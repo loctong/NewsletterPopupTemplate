@@ -190,6 +190,35 @@ header .logo {
   padding: 2rem;
 }
 
+.dashboard__content__report__generated__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.dashboard__content__report__generated__header__title {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dashboard__content__report__generated__header__filter a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border: 1px solid #e0e6ed;
+  border-radius: 1rem;
+  color: #595959;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dashboard__content__report__generated__header__filter img {
+  margin-right: 0.5rem;
+}
+
 .dashboard__content__report__referring {
   display: flex;
   justify-content: space-between;
@@ -291,5 +320,26 @@ header .logo {
 
 .dashboard__content_report_table .table .edit__button:hover {
   background-color: #595959;
-  color: #FFF;
+  color: #fff;
+}
+
+.dashboard__content__report__generated__info {
+  margin-top: 2rem;
+}
+
+.dashboard__content__report__generated__info .flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dashboard__content__report__generated__info .flex__item {
+  flex: 1 1 auto;
+  text-align: left;
+  line-height: 4rem;
+}
+
+/* .flex__item + .flex__item ky thuat nay de loai bo border cua phan tu dau tien */
+.dashboard__content__report__generated__info .flex__item + .flex__item { 
+  border-left: solid 1px #E0E6ED;
+  padding-left: 5rem;
 }
