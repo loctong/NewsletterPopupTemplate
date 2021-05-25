@@ -172,3 +172,118 @@ header .logo {
   background-color: #ffffff;
   border-radius: 0.5rem;
 }
+
+.dashboard__content {
+  width: 100%;
+}
+
+.dashboard__content_1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard__content__report__generated {
+  width: calc(100% / 2 - 1rem);
+  height: 41.1rem;
+  border: 2px solid #E0E6ED;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.dashboard__content__report__referring {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% / 2 - 1rem);
+  height: 41.1rem;
+  border: 2px solid #E0E6ED;
+  border-radius: 1rem;
+}
+
+.dashboard__content__report__referring .subscribe__info {
+  width: 100%;
+  padding: 9.5rem 5rem;
+}
+
+.dashboard__content__report__referring .subscribe__info .title1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 1.4rem;
+}
+
+.dashboard__content__report__referring .subscribe__info .title2 {
+  font-size: 2rem;
+  color: #4F4F4F;
+}
+
+.dashboard__content__report__referring .subscribe__info .email__info {
+  padding: 1.4rem 0;
+}
+
+.email__info input {
+  width: 30rem;
+  border: 0;
+  padding: 1.4rem;
+  border-radius: 1rem;
+}
+
+.email__info button {
+  background-color: #4A35C9;
+  border: 0;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 1.4rem 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.email__info input:focus {
+  outline: none !important;
+  border: 2px solid #5551ff;
+}
+
+.email__info .title3 {
+  color: #4f4f4f;
+}
+
+.dashboard__content_report_table {
+  margin-top: 1.5rem;
+  border: 2px solid #E0E6ED;
+  border-radius: 1rem;
+  height: calc(100vh - 54rem);
+  padding: 2rem;
+}
+
+.dashboard__content_report_table .table__wrap {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.dashboard__content_report_table .table {
+  width: 100%;
+  border-collapse: collapse;
+  /* display: block; */
+  max-height: 35.5rem;
+  /* overflow-y: auto; */
+}
+
+.dashboard__content_report_table .table th {
+  color: #000000;
+  font-weight: 900;
+}
+
+.dashboard__content_report_table .table td, .table th {
+  padding: 12px 15px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.dashboard__content_report_table .table thead, .table tr:not(:last-child) {
+  border-bottom: 1px solid #E0E6ED;
+}
+
+
+.dashboard__content_report_table .table th {
+}
+
+.dashboard__content_report_table .table tbody tr:nth-child(even) {
+}
