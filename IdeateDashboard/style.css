@@ -287,6 +287,10 @@ header .logo {
   overflow-y: auto;
 }
 
+.dashboard__content_report_table_tablet {
+  display: none;
+}
+
 .dashboard__content_report_table .table {
   width: 100%;
   border-collapse: collapse;
