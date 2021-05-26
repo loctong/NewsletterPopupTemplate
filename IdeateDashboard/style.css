@@ -344,7 +344,62 @@ header .logo {
 }
 
 /* .flex__item + .flex__item ky thuat nay de loai bo border cua phan tu dau tien */
-.dashboard__content__report__generated__info .flex__item + .flex__item { 
-  border-left: solid 1px #E0E6ED;
+.dashboard__content__report__generated__info .flex__item + .flex__item {
+  border-left: solid 1px #e0e6ed;
   padding-left: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    padding-right: 0;
+  }
+  .dashboard__content_1 {
+    display: block;
+  }
+
+  .dashboard__content__report__generated,
+  .dashboard__content__report__referring {
+    width: calc(100% - 4rem);
+    margin-bottom: 1rem;
+    height: calc(100vh/2 - 6rem);
+  }
+
+  .dashboard__content__report__generated__info .chart {
+    width: 460px !important;
+  }
+  .dashboard__content__report__referring .bg img {
+    width: 12rem !important;
+    object-fit: cover;
+  }
+  .dashboard__content_report_table {
+  }
+
+  .dashboard__content__report__referring .subscribe__info {
+    padding: 9.5rem 3rem ;
+  }
+
+  .email__info input {
+    width: 22rem;
+  }
+
+  .dashboard__content_report_table {
+    display: none;
+  }
+
+  .dashboard__content_report_table_tablet {
+    display: block;
+  }
+
+  .dashboard__content_report_table_tablet_wrapper {
+    padding:  3rem;
+    background-color: #F5F6F9;
+  }
+
+  .dashboard {
+    padding-bottom: 0;
+  }
+
+  .priority-1, .priority-2, .priority-3 {
+    display: none;
+  }
 }
